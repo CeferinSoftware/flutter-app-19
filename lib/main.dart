@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter WebView Template',
+      title: 'Kannasol',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
@@ -47,14 +47,14 @@ class _WebViewScreenState extends State<WebViewScreen> {
           onPageFinished: (url) => setState(() => isLoading = false),
         ),
       )
-      ..loadRequest(Uri.parse('https://flutter.dev'));
+      ..loadRequest(Uri.parse('https://kannasol.xyz/'));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter WebView Template'),
+        title: Text('Kannasol'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         actions: [
